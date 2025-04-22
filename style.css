@@ -1,43 +1,27 @@
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
     color: #333;
-    margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 header {
-    background-color: #d32f2f;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-.logo {
-    max-height: 80px;
-}
-.hero, .map, .enquiry {
-    padding: 20px;
     text-align: center;
 }
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
 }
-input, textarea, button {
+input, textarea {
+    width: 100%;
     margin: 10px 0;
     padding: 10px;
 }
 button {
-    background-color: #d32f2f;
-    color: white;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-}
-footer {
-    background-color: #212121;
-    color: white;
-    text-align: center;
-    padding: 10px;
 }
