@@ -1,0 +1,43 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.logo {
+    max-height: 80px;
+}
+.hero, .map, .enquiry {
+    padding: 20px;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea, button {
+    margin: 10px 0;
+    padding: 10px;
+}
+button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+footer {
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
