@@ -1,35 +1,144 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Maa Motors - Bara का सबसे भरोसेमंद BAJAJ Showroom. EMI, Offers, Test Drive, Inquiry - सब कुछ एक क्लिक में.">
-    <meta property="og:title" content="Maa Motors - BAJAJ Showroom, Bara">
-    <meta property="og:description" content="BAJAJ की नई बाइक्स, EMI, ऑफर और Inquiry Form के साथ.">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="https://maamotors.github.io/maa-motors/">
-    <title>Maa Motors - Bajaj Showroom</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maa Motors - Bajaj Showroom</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Hind', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background: #e53935;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 60px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+    nav {
+      background: #b71c1c;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .models, .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .map-container {
+      width: 100%;
+      height: 400px;
+    }
+    footer {
+      background: #212121;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .enquiry-form input, .enquiry-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .enquiry-form button {
+      background: #e53935;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="Maa Motors Logo" width="150">
-        <h1>🏍️ Maa Motors – Bara का सबसे भरोसेमंद BAJAJ Showroom!</h1>
-    </header>
-    
-    <section>
-        <h2>💬 Inquiry करें</h2>
-        <form action="https://formspree.io/f/mgvkeevp" method="POST">
-            <input type="text" name="name" placeholder="आपका नाम" required>
-            <input type="email" name="email" placeholder="ईमेल" required>
-            <textarea name="message" placeholder="आपका संदेश" required></textarea>
-            <button type="submit">भेजें</button>
-        </form>
-    </section>
+  <header>
+    <img src="logo.png" alt="Maa Motors Logo">
+    <h1>Maa Motors - सबसे भरोसेमंद BAJAJ शोरूम</h1>
+  </header>
 
-    <section>
-        <h2>📍 हमारा लोकेशन</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
+  <nav>
+    <a href="#models">मॉडल्स</a>
+    <a href="#features">विशेषताएं</a>
+    <a href="#map">लोकेशन</a>
+    <a href="#enquiry">संपर्क करें</a>
+  </nav>
+
+  <section class="section" id="models">
+    <h2>टॉप मॉडल्स उपलब्ध:</h2>
+    <div class="models">
+      <div class="card">
+        <h3>Pulsar N160</h3>
+        <p>डुअल और सिंगल चैनल में उपलब्ध</p>
+      </div>
+      <div class="card">
+        <h3>Freedom 125 CNG+Petrol</h3>
+        <p>दोहरे ईंधन टेक्नोलॉजी के साथ</p>
+      </div>
+      <div class="card">
+        <h3>RS 200</h3>
+        <p>स्टाइल और स्पीड का जबरदस्त मेल</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <h2>हमारी विशेषताएं</h2>
+    <div class="features">
+      <div class="card">100% Genuine BAJAJ डीलरशिप</div>
+      <div class="card">सर्वश्रेष्ठ कीमत की गारंटी</div>
+      <div class="card">फास्ट डिलीवरी और बेहतर सर्विस</div>
+      <div class="card">आसान EMI विकल्प</div>
+      <div class="card">मिनिमम डाउन पेमेंट</div>
+    </div>
+  </section>
+
+  <section class="section" id="map">
+    <h2>हमारा स्थान:</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.902147598243!2d85.1175!3d25.5941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMjXCsDM1JzM4LjgiTiA4NcKwMDcnMDMuMCJF!5e0!3m2!1sen!2sin!4v1615249872765!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section class="section" id="enquiry">
+    <h2>जानकारी के लिए संपर्क करें</h2>
+    <form class="enquiry-form" action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="आपका नाम" required>
+      <input type="email" name="email" placeholder="ईमेल" required>
+      <textarea name="message" rows="5" placeholder="आपका संदेश"></textarea>
+      <button type="submit">भेजें</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Maa Motors - सभी अधिकार सुरक्षित।</p>
+  </footer>
 </body>
 </html>
